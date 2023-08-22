@@ -1,0 +1,17 @@
+graph{
+  node [shape=circle]
+  1 -- 2;
+  2 -- 5;
+  2 -- 4;
+  5 -- 7;
+  7 -- 6;
+  6 -- 13 [side=R]    // added a new attribute (side), send this edge to the right
+  13 -- 11;
+  11 -- 12  [side=R]   // this edge to the right
+  12 -- 14;
+  4 -- 8;
+  4 -- 3;
+  4 -- 15;
+  3 -- 9;
+  9 -- 10 [side=R]    // this edge to the right
+}
